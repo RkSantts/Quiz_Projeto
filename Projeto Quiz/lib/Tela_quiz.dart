@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'result_page.dart';
-import 'question_model.dart';
+import 'Tela_resultado.dart';
+import 'Questoes.dart';
 
 class QuizPage extends StatefulWidget {
   @override
@@ -11,8 +11,8 @@ class _QuizPageState extends State<QuizPage> {
   int currentQuestion = 0;
   int score = 0;
 
-  final List<Question> questions = [
-    Question(
+  final List<Questao> questions = [
+    Questao(
       questionText: "Qual é a capital do Brasil?",
       options: ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
       correctIndex: 0,
@@ -37,7 +37,8 @@ class _QuizPageState extends State<QuizPage> {
           context,
           MaterialPageRoute(
             builder:
-                (context) => ResultPage(score: score, total: questions.length),
+                (context) =>
+                    TelaResultado(score: score, total: questions.length),
           ),
         );
       }

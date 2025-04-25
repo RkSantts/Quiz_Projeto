@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'Tela_inicio.dart';
 
-class ResultPage extends StatelessWidget {
+class TelaResultado extends StatelessWidget {
   final int score;
   final int total;
 
-  ResultPage({required this.score, required this.total});
+  TelaResultado({required this.score, required this.total});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class ResultPage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => Tela_inicio()),
                 );
               },
               child: Text("Reiniciar Quiz"),
