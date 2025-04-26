@@ -10,21 +10,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quiz Flamengo',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromARGB(
-          255,
-          255,
-          0,
-          0,
-        ), // fundo da tela
-        primaryColor: Colors.red[900], // vermelho Flamengo
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 0, 0),
+        primaryColor: const Color.fromARGB(255, 34, 34, 34),
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.red[900],
+          primary: const Color.fromARGB(255, 37, 37, 37),
           secondary: Colors.white,
         ),
         textTheme: GoogleFonts.bebasNeueTextTheme(Theme.of(context).textTheme),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.red[900],
+            backgroundColor: const Color.fromARGB(255, 32, 32, 32),
             foregroundColor: Colors.white,
             textStyle: TextStyle(fontSize: 18),
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),

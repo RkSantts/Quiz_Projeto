@@ -17,11 +17,7 @@ class Tela_inicio extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'lib/assets/image-removebg-preview.png',
-                width: 150,
-                height: 150,
-              ),
+              Image.asset('lib/assets/LogoFla1.png', width: 150, height: 150),
               SizedBox(height: 20),
               Text(
                 'Quiz sobre o Flamengo',
