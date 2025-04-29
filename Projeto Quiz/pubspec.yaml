@@ -64,6 +64,15 @@ flutter:
     - lib/assets/maracana.png
     - lib/assets/Artilheiro.png
     - lib/assets/logoFla2.png
+    - lib/assets/LogoLiberta.png
+    - lib/assets/TaçaCopa.png
+    - lib/assets/Estadio.png
+    - lib/assets/Titulo.png
+    - lib/assets/logoMundial.png
+    - lib/assets/logoGabigol.png
+    - lib/assets/RemosFla.png
+    - lib/assets/LogoRival.png
+    - lib/assets/logoJogador.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

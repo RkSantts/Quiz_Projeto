@@ -55,21 +55,21 @@ class _QuizPageState extends State<QuizPage> {
           "Em que ano o Flamengo conquistou sua primeira Taça Libertadores?",
       options: ["1972", "1992", "1981", "2009"],
       correctIndex: 2,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/LogoLiberta.png',
     ),
     Questao(
       questionText:
           "Qual jogador do Flamengo foi eleito o melhor jogador da Copa do Mundo de 1982?",
       options: ["Leandro", "Sócrates", "Júnior", "Zico"],
       correctIndex: 3,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/TaçaCopa.png',
     ),
     Questao(
       questionText:
           "Qual é o nome do estádio onde o Flamengo manda seus jogos?",
       options: ["Maracanã", "Allianz Parque", "Mineirão", "Morumbi"],
       correctIndex: 0,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/Estadio.png',
     ),
     Questao(
       questionText: "Qual foi o primeiro título mundial do Flamengo?",
@@ -80,14 +80,14 @@ class _QuizPageState extends State<QuizPage> {
         "Copa Intercontinental 1981",
       ],
       correctIndex: 3,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/logoMundial.png',
     ),
     Questao(
       questionText:
           "Quem foi o técnico do Flamengo na conquista da Libertadores de 2019?",
       options: ["Abel Braga", "Jorge Jesus", "Dorival Júnior", "Renato Gaúcho"],
       correctIndex: 1,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/Titulo.png',
     ),
     Questao(
       questionText: "Qual jogador do Flamengo tem o apelido de 'Gabigol'?",
@@ -98,27 +98,27 @@ class _QuizPageState extends State<QuizPage> {
         "Everton Ribeiro",
       ],
       correctIndex: 0,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/logoGabigol.png',
     ),
     Questao(
       questionText: "Em que ano o Flamengo foi fundado?",
       options: ["1895", "1902", "1922", "1891"],
       correctIndex: 0,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/RemosFla.png',
     ),
     Questao(
       questionText:
           "Quem foi o maior rival do Flamengo no futebol carioca durante a década de 1980?",
       options: ["Fluminense", "River Plate", "Vasco", "Botafogo"],
       correctIndex: 2,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/LogoRival.png',
     ),
     Questao(
       questionText:
           "Qual jogador do Flamengo foi o responsável por marcar o gol da vitória na final da Libertadores de 2019 contra o River Plate?",
       options: ["Bruno Henrique", "Gabigol", "Diego", "Arrascaeta"],
       correctIndex: 1,
-      logoAsset: 'assets/images/logo1.png',
+      logoAsset: 'lib/assets/logoJogador.png',
     ),
   ];
 
@@ -144,7 +144,7 @@ class _QuizPageState extends State<QuizPage> {
                 (context) => TelaResultado(
                   score: score,
                   total: questions.length,
-                  perdeuPorTempo: false, // <-- AQUI FALSE
+                  perdeuPorTempo: false,
                 ),
           ),
         );
@@ -198,10 +198,8 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
-              mainAxisAlignment:
-                  MainAxisAlignment.center, // centraliza verticalmente
-              crossAxisAlignment:
-                  CrossAxisAlignment.center, // centraliza horizontalmente
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(question.logoAsset, height: 150, width: 150),
                 SizedBox(height: 20),
